@@ -93,6 +93,23 @@
   animation-direction: alternate;
 }
 
+.project > img {
+  width: 200px;
+  height: 200px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+  width: 100%;
+  gap: 15px;
+  border: 2px solid blue;
+  padding: 15px;
+}
+
 @keyframes fill-progress {
   from {
     width: 0%;
@@ -102,23 +119,11 @@
   }
 }
 
-/* .hidden {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-100%);
-  transition: all 1s;
-}
-
-.show {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
-} */
-
 #my-projects {
+  padding-top: 30px;
   width: 80%;
   height: 80%;
-  overflow: hidden;
+
   display: flex;
   flex-direction: column;
 
@@ -126,11 +131,6 @@
   justify-content: center;
   gap: 15px;
 }
-
-/* body .cont:nth-of-type(1) {
-  background-image: url(/img/lauren-mancke-aOC7TSLb1o8-unsplash.jpg);
-  background-size: cover;
-} */
 
 .scrolling {
   overflow: scroll;
@@ -153,38 +153,9 @@ header {
   justify-content: center;
 }
 
-#grilla {
-  /* 
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 5fr));
-  gap: 1px;
-  
-  overflow: hidden;
-
-  justify-items: center; */
-  height: 90%;
-  border: solid 2px green;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-#grilla > .projecto {
-  overflow: hidden;
-  border: 1px solid red;
-  /* width: 100%;
-  height: 100%; */
-  background-color: black;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.projecto img {
-  width: 120px;
-  height: 120px;
+.project {
+  width: auto;
+  border: 1px solid green;
 }
 
 .cont {
@@ -192,9 +163,6 @@ header {
   justify-content: center;
   align-items: center;
   border: 1px solid red;
-}
-
-.cont {
   height: 100vh;
   border: 1px solid red;
   width: 100%;
@@ -210,15 +178,6 @@ header,
   grid-column: 1/3;
   justify-self: center;
 }
-/* button {
-  background-color: transparent !important;
-  color: black !important;
-  border: 0px !important;
-} */
-
-/* body {
-  padding: 0px 15%;
-} */
 
 h1 {
   font-size: 5vh;
@@ -245,19 +204,6 @@ p {
     display: flex;
     flex-direction: column;
   }
-
-  body {
-    padding: 0px;
-  }
-}
-
-.carousel {
-  width: 100%;
-  border: 1px solid red;
-}
-
-.carousel-item:hover {
-  opacity: 0.5;
 }
 
 #my-progress {
