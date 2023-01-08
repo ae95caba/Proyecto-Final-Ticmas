@@ -28,6 +28,10 @@
     /*  background-color: red !important;
     display: none; */
   }
+
+  /* 	.modal-body p {
+
+		} */
 }
 
 #glowing p {
@@ -184,7 +188,7 @@ header {
   align-items: center;
 
   height: 100vh;
-  border: 1px solid red;
+  /*   border: 1px solid red; */
   width: 100%;
   margin: 10px 0px !important;
 }
@@ -229,19 +233,12 @@ p {
   font-size: 12px;
 }
 
-#info button {
-  margin: 1px;
+.modal-body p {
+  font-size: 1rem;
 }
 
-.overlay {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-
-  opacity: 0;
-  width: 50%;
-  height: 50%;
+#info button {
+  margin: 1px;
 }
 
 .overlay svg {
@@ -254,6 +251,14 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  opacity: 0;
+  width: 50%;
+  height: 50%;
 }
 
 .project:hover .overlay {
