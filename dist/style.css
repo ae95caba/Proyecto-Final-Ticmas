@@ -16,7 +16,7 @@
   gap: 1px;
 
   justify-content: center;
-  border: 1px solid red;
+  /*  border: 1px solid red; */
   width: 66%;
 }
 
@@ -41,7 +41,7 @@
   color: black;
   animation: animate 2s linear infinite;
 
-  border: 1px solid red;
+  /* border: 1px solid red; */
   text-align: center;
 }
 
@@ -121,7 +121,7 @@
   overflow: scroll;
   width: 100%;
   gap: 15px;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   padding: 15px;
 }
 
@@ -171,23 +171,28 @@ header {
 .project {
   position: relative;
   width: auto;
-  border: 1px solid green;
+  /* border: 1px solid green; */
+}
+
+#info button {
+  width: 7rem !important;
 }
 
 .cont {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
+
   height: 100vh;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 100%;
+  margin: 10px 0px !important;
 }
 
 header,
 #my-progress,
 #my-projects {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .informacion-academica {
@@ -197,6 +202,7 @@ header,
 
 h1 {
   font-size: 5vh;
+  font-weight: bold;
 }
 
 .project h3 {
@@ -208,6 +214,7 @@ h1 {
 
 h2 {
   font-size: 4vh;
+  font-weight: bold;
 }
 
 h3 {
@@ -243,7 +250,7 @@ p {
 }
 .project .overlay {
   transition: all 0.5s ease-in;
-  border: 1px solid;
+  /* border: 1px solid; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -270,10 +277,35 @@ p {
   justify-content: center;
 }
 
+footer p {
+  font-weight: bolder;
+
+  font-size: 1rem;
+}
+
 .sub-cont2 {
   display: grid;
   grid-template-columns: 1fr 10fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 5px;
   height: 50%;
+}
+hr {
+  overflow: visible; /* For IE */
+  height: 30px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+hr:before {
+  /* Not really supposed to work, but does */
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
 }
