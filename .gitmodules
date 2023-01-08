@@ -1,0 +1,6 @@
+[submodule "dist/projects/project_calculator"]
+	path = dist/projects/project_calculator
+	url = https://github.com/ae95caba/project_calculator.git
+[submodule "dist/projects/Project-Todo-List-2"]
+	path = dist/projects/Project-Todo-List-2
+	url = https://github.com/ae95caba/Project-Todo-List-2.git
