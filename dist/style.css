@@ -154,6 +154,7 @@ header {
 }
 
 .project {
+  position: relative;
   width: auto;
   border: 1px solid green;
 }
@@ -183,12 +184,19 @@ h1 {
   font-size: 5vh;
 }
 
+.project h3 {
+  color: white;
+  background-color: black;
+  margin: 0px;
+  padding: 5px;
+}
+
 h2 {
   font-size: 4vh;
 }
 
 h3 {
-  font-size: 14px;
+  font-size: 3vh;
 }
 
 * {
@@ -199,11 +207,43 @@ p {
   font-size: 12px;
 }
 
-@media only screen and (max-width: 900px) {
-  #info {
-    display: flex;
-    flex-direction: column;
-  }
+#info button {
+  margin: 1px;
+}
+
+.overlay {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  opacity: 0;
+  width: 50%;
+  height: 50%;
+}
+
+.overlay svg {
+  width: 50%;
+  color: black;
+}
+.project .overlay {
+  transition: all 0.5s ease-in;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project:hover .overlay {
+  opacity: 1;
+}
+
+.project img {
+  transition: all 0.5s ease-in;
+}
+
+.project:hover img {
+  opacity: 0.3;
 }
 
 #my-progress {
