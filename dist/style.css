@@ -141,6 +141,7 @@
   gap: 15px;
   /* border: 2px solid blue; */
   padding: 15px;
+  border: 1px solid black;
 }
 
 @keyframes fill-progress {
@@ -165,10 +166,10 @@
   gap: 15px;
 }
 
-.scrolling {
+/* .scrolling {
   overflow: scroll;
   position: relative;
-}
+} */
 
 header img {
   width: 25vh;
