@@ -14,10 +14,15 @@ async function getImage(nameToQuery, elementId) {
 
   const resultsLength = obj.results.length;
 
-  const imgUrl = obj.results[getRandomInt(0, resultsLength - 1)].urls.full;
+  const imgUrl = obj.results[getRandomInt(0, resultsLength - 1)].urls.small;
 
-  const listaDeTareas = document.getElementById(elementId);
-  listaDeTareas.src = `${imgUrl}`;
+  const img = document.getElementById(elementId);
+  img.src = `${imgUrl}`;
+  img.style.visibility = "visible";
+
+  const imgLoading = document.getElementById(`${elementId}-loading`);
+  console.log(imgLoading);
+  imgLoading.style.visibility = "hidden";
 }
 
 export default getImage;

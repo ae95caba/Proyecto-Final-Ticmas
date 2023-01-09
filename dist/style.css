@@ -104,11 +104,25 @@
   color: black;
 }
 
-.fill-progress {
+/* .fill-progress {
   animation-duration: 2s;
   animation-name: fill-progress;
   animation-iteration-count: 1;
   animation-direction: alternate;
+} */
+
+.progress-bar {
+  transition-property: width;
+  transition-delay: 0s;
+  transition-duration: 4s;
+}
+
+.fill {
+  width: 70% !important;
+}
+
+.fill-reset {
+  transition-duration: 0s;
 }
 
 .project > img {

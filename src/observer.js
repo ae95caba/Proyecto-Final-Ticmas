@@ -33,11 +33,13 @@ function observerBars() {
     entries.forEach((entry) => {
       //console.log(`entry:${entry}`);
       if (entry.isIntersecting) {
-        entry.target.classList.add("fill-progress");
-        entry.target.style.width = "70%";
+        entry.target.classList.remove("fill-reset");
+        entry.target.classList.add("fill");
+        //entry.target.style.width = "70%";
       } else {
-        entry.target.classList.remove("fill-progress");
-        entry.target.style.width = "0px";
+        entry.target.classList.remove("fill");
+        entry.target.classList.add("fill-reset");
+        //entry.target.style.width = "0px";
         //alert("hola");
       }
     });
