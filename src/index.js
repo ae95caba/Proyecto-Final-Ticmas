@@ -2,7 +2,9 @@ import bootstrapLinks from "./bootstrap";
 import { observeContainer, observerBars } from "./observer.js";
 import getImage from "./unsplash";
 import preventClick from "./preventClick";
+import openImgModal from "./openImgModal";
 
+openImgModal();
 observeContainer();
 observerBars();
 preventClick();
