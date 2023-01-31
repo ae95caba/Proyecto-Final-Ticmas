@@ -11,3 +11,5 @@ preventClick();
 bootstrapLinks();
 getImage("note", "lista-de-tareas");
 getImage("calculator", "calculadora");
+getImage("calculator", "calculadora");
+getImage("battleship", "battleship");
